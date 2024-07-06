@@ -1,0 +1,31 @@
+<!DOCTYPE html>                      <!-- 02-07-2024(Weather App) Project-2-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather 2 App</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- <link rel="stylesheet" href="weather2.css"> -->
+</head>
+<body>
+    <!-- title -->
+     <div id="container">
+        <div class="searchBox">
+            <form>
+                <input type="search" id="input" name="myInput" placeholder="enter your city" spellcheck="false">
+                <input type="button" value="Search" onclick="checkWeatherDetails(input.value)" id="searchId" class="inputSearch">
+            </form>
+        </div>
+
+        <div id="weather-body">
+            <img src="./images/cloud-image.jpg" alt="cloud-image" style="height: 200px;">
+            <h2 id="temp"></h2>
+            <h3 id="city"></h3>
+        </div>
+
+     </div>
+<script src="./weather2.js"></script>
+</body>
+</html>
